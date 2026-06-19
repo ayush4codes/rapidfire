@@ -7,25 +7,25 @@
 /* --- Design Tokens --- */
 :root {
   /* Colors */
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: rgba(255, 255, 255, 0.04);
-  --bg-card-hover: rgba(255, 255, 255, 0.07);
-  --bg-glass: rgba(255, 255, 255, 0.06);
-  --border-glass: rgba(255, 255, 255, 0.1);
-  --border-subtle: rgba(255, 255, 255, 0.06);
+  --bg-primary: #ffffff;
+  --bg-secondary: #fcfaf8;
+  --bg-card: rgba(0, 0, 0, 0.03);
+  --bg-card-hover: rgba(0, 0, 0, 0.06);
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --border-glass: rgba(0, 0, 0, 0.1);
+  --border-subtle: rgba(0, 0, 0, 0.05);
 
-  --text-primary: #f0f0f5;
-  --text-secondary: #8a8a9a;
-  --text-muted: #55556a;
+  --text-primary: #1a1a1f;
+  --text-secondary: #5a5a6a;
+  --text-muted: #8a8a9a;
 
-  /* Accent Gradient */
-  --accent-1: #7c3aed;
-  --accent-2: #06b6d4;
-  --accent-3: #8b5cf6;
+  /* Accent Gradient (Warm) */
+  --accent-1: #f97316; /* Orange */
+  --accent-2: #ef4444; /* Red */
+  --accent-3: #f59e0b; /* Amber */
   --gradient-primary: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-  --gradient-subtle: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(6, 182, 212, 0.15));
-  --gradient-glow: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(6, 182, 212, 0.3));
+  --gradient-subtle: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(239, 68, 68, 0.15));
+  --gradient-glow: linear-gradient(135deg, rgba(249, 115, 22, 0.3), rgba(239, 68, 68, 0.3));
 
   /* Status */
   --success: #22c55e;
@@ -108,9 +108,9 @@ body::before {
   width: 100%;
   height: 100%;
   background:
-    radial-gradient(ellipse 80% 60% at 50% -20%, rgba(124, 58, 237, 0.12), transparent),
-    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(6, 182, 212, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(139, 92, 246, 0.06), transparent);
+    radial-gradient(ellipse 80% 60% at 50% -20%, rgba(249, 115, 22, 0.12), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(239, 68, 68, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(245, 158, 11, 0.06), transparent);
   pointer-events: none;
   z-index: 0;
 }
@@ -181,7 +181,7 @@ input {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  background: linear-gradient(135deg, rgba(255,255,255,0.25), transparent);
   opacity: 0;
   transition: opacity var(--transition-base);
 }
@@ -228,7 +228,7 @@ input {
 .input-field {
   width: 100%;
   padding: var(--space-md) var(--space-lg);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   color: var(--text-primary);
@@ -242,8 +242,8 @@ input {
 
 .input-field:focus {
   border-color: var(--accent-1);
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+  background: rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
 }
 
 .input-label {
@@ -484,7 +484,7 @@ input {
 .progress-bar-track {
   width: 100%;
   height: 4px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.06);
   border-radius: var(--radius-full);
   overflow: hidden;
 }
@@ -518,7 +518,7 @@ input {
 
 .timer-ring-bg {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.08);
+  stroke: rgba(0, 0, 0, 0.08);
   stroke-width: 3;
 }
 
@@ -612,7 +612,7 @@ input {
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   color: var(--text-primary);
@@ -623,15 +623,15 @@ input {
 }
 
 .option-btn:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.15);
   transform: translateX(4px);
 }
 
 .option-btn.selected {
   background: var(--gradient-subtle);
   border-color: var(--accent-1);
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.15);
 }
 
 .option-letter {
@@ -641,7 +641,7 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.04);
   font-size: var(--font-size-sm);
   font-weight: 600;
   color: var(--text-secondary);
@@ -655,7 +655,7 @@ input {
 }
 
 .option-btn:hover .option-letter {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .option-btn.selected:hover .option-letter {
@@ -705,7 +705,7 @@ input {
 
 .score-ring-bg {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.06);
+  stroke: rgba(0, 0, 0, 0.06);
   stroke-width: 8;
 }
 
