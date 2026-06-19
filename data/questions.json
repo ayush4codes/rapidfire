@@ -1,402 +1,482 @@
 [
   {
-    "question": "What does HTML stand for?",
-    "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which data structure uses LIFO (Last In, First Out)?",
-    "options": ["Queue", "Stack", "Array", "Linked List"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the time complexity of binary search?",
-    "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which protocol is used for secure web communication?",
-    "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "In Git, what command creates a new branch?",
-    "options": ["git new", "git branch", "git create", "git init"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does CSS stand for?",
-    "options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Syntax", "Colorful Style Sheets"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which language is primarily used for Android development?",
-    "options": ["Swift", "Kotlin", "C#", "Ruby"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the default port for HTTP?",
-    "options": ["443", "8080", "80", "3000"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which of these is a NoSQL database?",
-    "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does API stand for?",
-    "options": ["Application Programming Interface", "Applied Program Integration", "Application Process Interface", "Advanced Programming Interface"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which sorting algorithm has the best average time complexity?",
-    "options": ["Bubble Sort", "Selection Sort", "Merge Sort", "Insertion Sort"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does DNS stand for?",
-    "options": ["Digital Network Service", "Domain Name System", "Data Network System", "Dynamic Name Server"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is NOT a JavaScript framework?",
-    "options": ["React", "Angular", "Django", "Vue"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the purpose of a firewall?",
-    "options": ["Speed up internet", "Filter network traffic", "Store data", "Compress files"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "In Python, which keyword is used to define a function?",
-    "options": ["func", "function", "def", "define"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does SQL stand for?",
-    "options": ["Structured Query Language", "Simple Query Language", "Standard Query Logic", "System Query Language"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which company developed the React library?",
-    "options": ["Google", "Microsoft", "Facebook (Meta)", "Amazon"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the main purpose of Docker?",
-    "options": ["Version control", "Containerization", "Database management", "Code compilation"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these is a version control system?",
-    "options": ["Docker", "Kubernetes", "Git", "Jenkins"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does RAM stand for?",
-    "options": ["Read Access Memory", "Random Access Memory", "Rapid Access Module", "Run Access Memory"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which HTTP method is used to update a resource?",
-    "options": ["GET", "POST", "PUT", "DELETE"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is TypeScript?",
-    "options": ["A database", "A superset of JavaScript", "An operating system", "A CSS framework"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is used for CI/CD?",
-    "options": ["GitHub Actions", "VS Code", "MongoDB", "Figma"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "What does OOP stand for?",
-    "options": ["Object Oriented Programming", "Open Online Platform", "Operator Oriented Process", "Object Online Programming"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which data structure is used for BFS traversal?",
-    "options": ["Stack", "Queue", "Heap", "Tree"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the output of typeof null in JavaScript?",
-    "options": ["null", "undefined", "object", "boolean"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which cloud platform is developed by Amazon?",
-    "options": ["Azure", "GCP", "AWS", "IBM Cloud"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does JWT stand for?",
-    "options": ["Java Web Token", "JSON Web Token", "JavaScript Web Transfer", "JSON Web Transfer"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which command installs a package in npm?",
-    "options": ["npm get", "npm install", "npm add", "npm fetch"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is Kubernetes used for?",
-    "options": ["Frontend development", "Container orchestration", "Database queries", "Machine learning"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these is an interpreted language?",
-    "options": ["C", "C++", "Java", "Python"],
-    "correctAnswer": 3
-  },
-  {
-    "question": "What is the primary use of Redis?",
-    "options": ["File storage", "In-memory caching", "Version control", "Image processing"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does REST stand for?",
-    "options": ["Representational State Transfer", "Remote Execution Standard Technology", "Real-time Event Streaming", "Rapid Enterprise Service Technology"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which of these is a CSS preprocessor?",
-    "options": ["jQuery", "Bootstrap", "SASS", "Webpack"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the worst-case time complexity of quicksort?",
-    "options": ["O(n log n)", "O(n)", "O(n²)", "O(log n)"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which HTTP status code means 'Not Found'?",
-    "options": ["200", "301", "404", "500"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is GraphQL?",
-    "options": ["A database", "A query language for APIs", "A CSS framework", "A testing tool"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these is a package manager for Python?",
-    "options": ["npm", "pip", "yarn", "brew"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does SSH stand for?",
-    "options": ["Secure Shell", "Simple Secure Hosting", "System Shell Handler", "Secure System Host"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which design pattern ensures only one instance of a class exists?",
-    "options": ["Factory", "Observer", "Singleton", "Strategy"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does URL stand for?",
-    "options": ["Uniform Resource Locator", "Universal Reference Link", "Unified Resource Language", "Universal Resource Locator"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which tag is used to create a hyperlink in HTML?",
-    "options": ["<link>", "<href>", "<a>", "<url>"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What symbol is used for single-line comments in JavaScript?",
-    "options": ["#", "//", "<!--", "%%"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which operator is used for strict equality in JavaScript?",
-    "options": ["==", "===", "!=", "="],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does CPU stand for?",
-    "options": ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Core Processing Unit"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which language is used for iOS app development?",
-    "options": ["Java", "Kotlin", "Swift", "Dart"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the file extension for a Python file?",
-    "options": [".pt", ".py", ".pn", ".ph"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which HTML element is used for the largest heading?",
-    "options": ["<h6>", "<heading>", "<head>", "<h1>"],
-    "correctAnswer": 3
-  },
-  {
-    "question": "What does JSON stand for?",
-    "options": ["JavaScript Object Notation", "Java Standard Object Notation", "JavaScript Online Notation", "Java Source Open Network"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which CSS property changes the text color?",
-    "options": ["font-color", "text-color", "color", "foreground"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the default port number for HTTPS?",
-    "options": ["80", "8080", "443", "3000"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which method adds an element to the end of an array in JavaScript?",
-    "options": ["append()", "push()", "add()", "insert()"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does IDE stand for?",
-    "options": ["Integrated Development Environment", "Internal Development Engine", "Intelligent Design Editor", "Integrated Design Environment"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which company developed Angular?",
-    "options": ["Facebook", "Google", "Microsoft", "Apple"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the correct way to declare a variable in JavaScript (ES6)?",
-    "options": ["var x = 5", "let x = 5", "int x = 5", "variable x = 5"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does SSD stand for?",
-    "options": ["Solid State Drive", "Super Speed Disk", "System Storage Device", "Solid System Drive"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which protocol is used to send emails?",
-    "options": ["HTTP", "FTP", "SMTP", "TCP"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "In CSS, which property is used to change the background color?",
-    "options": ["bgcolor", "color", "background-color", "back-color"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is npm?",
-    "options": ["Node Package Manager", "New Program Module", "Network Protocol Manager", "Node Process Manager"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which HTML tag is used to display an image?",
-    "options": ["<image>", "<pic>", "<img>", "<photo>"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does GUI stand for?",
-    "options": ["General User Interface", "Graphical User Interface", "Global Unified Interface", "Graphical Universal Input"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which keyword is used to create a class in Java?",
-    "options": ["struct", "object", "class", "type"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the main purpose of an operating system?",
-    "options": ["Run games", "Manage hardware and software resources", "Connect to internet", "Edit documents"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these is a JavaScript runtime environment?",
-    "options": ["Django", "Flask", "Node.js", "Laravel"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does IP stand for in IP address?",
-    "options": ["Internet Protocol", "Internal Process", "Internet Port", "Information Protocol"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which symbol is used to select an element by ID in CSS?",
-    "options": [".", "#", "@", "&"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What type of language is SQL?",
-    "options": ["Programming language", "Markup language", "Query language", "Scripting language"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which method is used to convert a string to an integer in JavaScript?",
-    "options": ["toInt()", "parseInt()", "convertInt()", "integer()"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is GitHub primarily used for?",
-    "options": ["Email hosting", "Code hosting and collaboration", "Web hosting", "Database management"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these is NOT a programming language?",
-    "options": ["Python", "HTML", "Java", "C++"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does LAN stand for?",
-    "options": ["Large Area Network", "Local Access Node", "Local Area Network", "Long Area Network"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Which command is used to list files in a Linux terminal?",
-    "options": ["dir", "ls", "list", "show"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the output of 2 + '2' in JavaScript?",
-    "options": ["4", "22", "NaN", "Error"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these is a frontend framework?",
-    "options": ["Express", "Django", "Vue.js", "Spring"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does CRUD stand for?",
-    "options": ["Create, Read, Update, Delete", "Copy, Run, Upload, Download", "Create, Run, Update, Debug", "Compile, Read, Upload, Delete"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which HTML attribute specifies an alternate text for an image?",
-    "options": ["title", "src", "alt", "name"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the purpose of the 'this' keyword in JavaScript?",
-    "options": ["Declares a variable", "Refers to the current object", "Creates a new function", "Imports a module"],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of these databases is relational?",
-    "options": ["MongoDB", "Redis", "PostgreSQL", "Cassandra"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What does AJAX stand for?",
-    "options": ["Asynchronous JavaScript and XML", "Advanced Java and XML", "Automatic JavaScript and XHTML", "Asynchronous Java and XML"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which of these is used to style a webpage?",
-    "options": ["HTML", "CSS", "SQL", "Python"],
-    "correctAnswer": 1
+    "question": "To find pairs summing to a target in $O(N)$ time, which data structure is best?",
+    "options": [
+      "Max Heap",
+      "Hash Map",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "What is the worst-case time complexity of a Hash Map insertion?",
+    "options": [
+      "$O(1)$",
+      "$O(\\log N)$",
+      "$O(N)$",
+      "$O(N^2)$"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "To optimally group anagrams together, what should you use as the hash map key?",
+    "options": [
+      "The string length",
+      "The sorted string",
+      "The reversed string",
+      "The first letter"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "What property allows an array of elements 1 to N (with one missing number) to be solved in $O(N)$ time with $O(1)$ space?",
+    "options": [
+      "The expected sum of 1 to N is mathematically known",
+      "The array is sorted",
+      "The max element is $N-1$",
+      "It contains duplicates"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Two pointers moving from opposite ends toward the middle are most ideal for which type of array?",
+    "options": [
+      "Unsorted",
+      "Sorted",
+      "Reversed",
+      "Randomized"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "In \"Container With Most Water\", when deciding which pointer to move inward, what is the correct logic?",
+    "options": [
+      "Always move left",
+      "Move the pointer pointing to the smaller height",
+      "Move the pointer pointing to the larger height",
+      "Move both simultaneously"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "To remove duplicates from a sorted array in-place, how many pointers do you generally need?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "The Sliding Window technique is typically used to optimize $O(N^2)$ brute-force subarray problems down to:",
+    "options": [
+      "$O(N \\log N)$",
+      "$O(N)$",
+      "$O(1)$",
+      "$O(N!)$"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "In \"Longest Substring Without Repeating Characters\", what data structure is best to keep track of the characters currently in your window?",
+    "options": [
+      "Min Heap",
+      "Stack",
+      "Hash Set",
+      "Trie"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Which data structure is used to optimally validate matching/valid parentheses?",
+    "options": [
+      "Queue",
+      "Hash Map",
+      "Stack",
+      "Graph"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "A correctly implemented \"Min Stack\" retrieves the minimum element in what time complexity?",
+    "options": [
+      "$O(1)$",
+      "$O(\\log N)$",
+      "$O(N)$",
+      "$O(N \\log N)$"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Reverse Polish Notation (Postfix) is evaluated using which structure?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Trie"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "Binary search absolutely requires the search space to be:",
+    "options": [
+      "Random",
+      "Even length",
+      "Sorted or monotonic",
+      "Positive numbers only"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "What is the time complexity of searching in a Rotated Sorted Array?",
+    "options": [
+      "$O(1)$",
+      "$O(\\log N)$",
+      "$O(N)$",
+      "$O(N \\log N)$"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "To find the minimum in a rotated sorted array, you generally compare the middle element with:",
+    "options": [
+      "The first element",
+      "The last (or rightmost) element",
+      "The target",
+      "The previous element"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Floyd\u2019s Cycle-Finding Algorithm uses two pointers moving at what speeds?",
+    "options": [
+      "1 node/step and 1 node/step",
+      "1 node/step and 2 nodes/step",
+      "2 nodes/step and 3 nodes/step",
+      "1 node/step and 3 nodes/step"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "Reversing a singly linked list iteratively requires keeping track of how many nodes simultaneously?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Finding the exact middle of a linked list in a single pass is best done using:",
+    "options": [
+      "Slow and fast pointers",
+      "A dummy head",
+      "Recursion",
+      "A Hash Map"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "To merge two sorted linked lists effectively, which pattern is utilized?",
+    "options": [
+      "Sliding Window",
+      "Two Pointers",
+      "Binary Search",
+      "Backtracking"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Inverting a binary tree requires swapping which elements?",
+    "options": [
+      "Only leaf nodes",
+      "Only the root's children",
+      "The left and right children of every node",
+      "The values of adjacent nodes"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "Finding the Lowest Common Ancestor efficiently in a Binary Search Tree relies on which property?",
+    "options": [
+      "Left child < Root < Right child",
+      "The root is the maximum",
+      "It is a complete tree",
+      "The tree is perfectly balanced"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Level Order Traversal of a tree is implemented iteratively using a:",
+    "options": [
+      "Stack",
+      "Queue",
+      "Priority Queue",
+      "Trie"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "An Inorder Traversal of a valid Binary Search Tree yields values in what order?",
+    "options": [
+      "Descending",
+      "Ascending",
+      "Random",
+      "Level-by-level"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "The maximum depth of a binary tree is most commonly found using:",
+    "options": [
+      "DFS or BFS",
+      "Binary Search",
+      "Two Pointers",
+      "Sliding Window"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "A Trie (Prefix Tree) is a data structure heavily optimized for operations on:",
+    "options": [
+      "Integers",
+      "Graphs",
+      "Strings and Prefixes",
+      "Matrices"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "Searching for a word of length L in a Trie takes what time complexity?",
+    "options": [
+      "$O(1)$",
+      "$O(L)$",
+      "$O(N)$",
+      "$O(L \\log N)$"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "Finding the Kth largest element in a massive array is efficiently solved using a:",
+    "options": [
+      "Min Heap of size K",
+      "Max Heap of size K",
+      "Stack of size K",
+      "Queue of size K"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "A Priority Queue is typically implemented under the hood using a:",
+    "options": [
+      "Linked List",
+      "Binary Search Tree",
+      "Binary Heap",
+      "Hash Table"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "\"Flood Fill\" on a 2D grid is structurally identical to traversing a graph using:",
+    "options": [
+      "Binary Search",
+      "DFS or BFS",
+      "Two Pointers",
+      "A Min Heap"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "Detecting a cycle in a directed graph (like in Course Schedule) requires detecting what kind of edges during DFS?",
+    "options": [
+      "Back edges",
+      "Cross edges",
+      "Forward edges",
+      "Tree edges"
+    ],
+    "correctAnswer": 0,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "To find the shortest path in an unweighted graph, you should use:",
+    "options": [
+      "DFS",
+      "BFS",
+      "Dijkstra's Algorithm",
+      "Bellman-Ford"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "The \"Number of Connected Components\" in a graph can be found using DFS/BFS or dynamically using:",
+    "options": [
+      "Sliding Window",
+      "Union-Find (Disjoint Set)",
+      "Topological Sort",
+      "A Trie"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "\"Climbing Stairs\" ($n$ steps, taking 1 or 2 steps) generates the exact same sequence as:",
+    "options": [
+      "Factorials",
+      "Fibonacci Numbers",
+      "Prime numbers",
+      "Catalan numbers"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "In \"House Robber\", you cannot pick adjacent elements. The recurrence relation depends on tracking:",
+    "options": [
+      "All previous houses",
+      "The max of (Current + i-2) vs (i-1)",
+      "Only the last house",
+      "Only the first house"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 20
+  },
+  {
+    "question": "The \"Coin Change\" problem (finding the minimum number of coins) is a classic variation of:",
+    "options": [
+      "0/1 Knapsack",
+      "Unbounded Knapsack",
+      "Longest Common Subsequence",
+      "Matrix Chain Multiplication"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Dynamic Programming strictly optimizes recursive problems by utilizing:",
+    "options": [
+      "In-place array sorting",
+      "Caching/Memoizing overlapping subproblems",
+      "Multiple moving pointers",
+      "Randomizing choices"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "To efficiently merge intervals (like [[1,3], [2,6]]), what is the mandatory first step?",
+    "options": [
+      "Sort by end time",
+      "Sort by start time",
+      "Put intervals in a Heap",
+      "Put intervals in a Hash Map"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "\"Meeting Rooms II\" (finding the minimum rooms required) is perfectly solved by sorting the intervals and utilizing a:",
+    "options": [
+      "Stack",
+      "Min Heap",
+      "Hash Set",
+      "Trie"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 15
+  },
+  {
+    "question": "Which bitwise operation perfectly finds the single number in an array where every other number appears exactly twice?",
+    "options": [
+      "AND (&)",
+      "OR (|)",
+      "XOR (^)",
+      "NOT (~)"
+    ],
+    "correctAnswer": 2,
+    "category": "dsa",
+    "timeLimit": 10
+  },
+  {
+    "question": "What does the bitwise operation n & (n - 1) do to the binary representation of n?",
+    "options": [
+      "Flips all the bits",
+      "Clears the lowest set bit (1 to 0)",
+      "Adds 1 to the binary value",
+      "Sets the lowest zero bit to 1"
+    ],
+    "correctAnswer": 1,
+    "category": "dsa",
+    "timeLimit": 20
   }
 ]

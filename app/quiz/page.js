@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
-const TOTAL_TIME = 15; // seconds per question
 const LETTERS = ['A', 'B', 'C', 'D'];
 
 export default function QuizPage() {
@@ -13,7 +12,7 @@ export default function QuizPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [answers, setAnswers] = useState([]);
-  const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
+  const [timeLeft, setTimeLeft] = useState(15);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -102,9 +101,12 @@ export default function QuizPage() {
 
       // Transition to next question
       setTimeout(() => {
-        setCurrentIndex((prev) => prev + 1);
+        const nextIndex = prev => prev + 1;
+        setCurrentIndex(nextIndex);
+        // We use function state updater above, but here we need the exact index to fetch timeLimit
+        const nextIdx = currentIndex + 1;
         setSelectedOption(null);
-        setTimeLeft(TOTAL_TIME);
+        setTimeLeft(questions[nextIdx]?.timeLimit || 15);
         questionStartTime.current = Date.now();
         setIsTransitioning(false);
       }, 400);
@@ -148,14 +150,17 @@ export default function QuizPage() {
 
   const startQuiz = () => {
     setQuizStarted(true);
+    setTimeLeft(questions[0]?.timeLimit || 15);
     questionStartTime.current = Date.now();
   };
 
   // Timer progress for SVG ring
+  const currentQuestion = questions[currentIndex];
+  const timeLimit = currentQuestion?.timeLimit || 15;
   const circumference = 2 * Math.PI * 20;
-  const timerProgress = ((TOTAL_TIME - timeLeft) / TOTAL_TIME) * circumference;
+  const timerProgress = ((timeLimit - timeLeft) / timeLimit) * circumference;
   const timerClass =
-    timeLeft > 8 ? 'timer-safe' : timeLeft > 4 ? 'timer-warning' : 'timer-danger';
+    timeLeft > (timeLimit * 0.5) ? 'timer-safe' : timeLeft > (timeLimit * 0.25) ? 'timer-warning' : 'timer-danger';
 
   // Loading state
   if (loading) {
@@ -213,7 +218,6 @@ export default function QuizPage() {
     );
   }
 
-  const currentQuestion = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
 
   return (

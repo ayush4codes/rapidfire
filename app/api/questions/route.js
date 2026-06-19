@@ -13,6 +13,7 @@ export async function GET() {
         $project: {
           question: 1,
           options: 1,
+          timeLimit: 1,
           // Do NOT send correctAnswer to client
         },
       },
