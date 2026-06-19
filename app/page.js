@@ -74,7 +74,7 @@ export default function LoginPage() {
                 id="fullName"
                 type="text"
                 className="input-field"
-                placeholder="John Doe"
+                placeholder="Ayush Mishra"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 autoComplete="name"
@@ -92,7 +92,7 @@ export default function LoginPage() {
                 id="githubUsername"
                 type="text"
                 className="input-field"
-                placeholder="johndoe"
+                placeholder="thunder90"
                 value={githubUsername}
                 onChange={(e) => setGithubUsername(e.target.value)}
                 autoComplete="username"
