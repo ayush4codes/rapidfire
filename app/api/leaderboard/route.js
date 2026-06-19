@@ -41,3 +41,28 @@ export async function GET(request) {
     );
   }
 }
+
+export async function DELETE(request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const secret = searchParams.get('secret');
+
+    if (secret !== process.env.ADMIN_SECRET) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
+    await dbConnect();
+
+    // Clear all results and users so they can retake the quiz if needed
+    await Result.deleteMany({});
+    await User.deleteMany({});
+
+    return NextResponse.json({ success: true, message: 'Leaderboard cleared successfully' });
+  } catch (error) {
+    console.error('Clear leaderboard error:', error);
+    return NextResponse.json(
+      { error: 'Failed to clear leaderboard' },
+      { status: 500 }
+    );
+  }
+}

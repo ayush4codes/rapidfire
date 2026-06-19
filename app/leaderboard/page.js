@@ -207,11 +207,35 @@ export default function LeaderboardPage() {
               style={{
                 textAlign: 'center',
                 marginTop: 'var(--space-xl)',
-                fontSize: 'var(--font-size-sm)',
-                color: 'var(--text-muted)',
               }}
             >
-              Total participants: {leaderboard.length}
+              <div style={{ fontSize: 'var(--font-size-sm)', color: 'var(--text-muted)', marginBottom: 'var(--space-md)' }}>
+                Total participants: {leaderboard.length}
+              </div>
+              <button 
+                className="btn-secondary" 
+                style={{ color: 'var(--error)', borderColor: 'rgba(239, 68, 68, 0.2)' }}
+                onClick={async () => {
+                  if (!window.confirm("Are you sure you want to clear the leaderboard? This will delete all results and user accounts, allowing everyone to retake the quiz.")) return;
+                  try {
+                    setLoading(true);
+                    const res = await fetch(`/api/leaderboard?secret=${encodeURIComponent(secret)}`, { method: 'DELETE' });
+                    if (res.ok) {
+                      setLeaderboard([]);
+                    } else {
+                      const data = await res.json();
+                      setError(data.error || 'Failed to clear');
+                    }
+                  } catch (err) {
+                    setError('Network error');
+                  } finally {
+                    setLoading(false);
+                  }
+                }}
+                disabled={loading}
+              >
+                {loading ? '...' : '⚠️ Clear Leaderboard'}
+              </button>
             </div>
           </div>
         )}
