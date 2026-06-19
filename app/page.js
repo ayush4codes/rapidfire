@@ -57,7 +57,7 @@ export default function LoginPage() {
             <span>Rapid Fire</span>
           </h1>
           <p className="login-subtitle">
-            40 tech questions · 15 seconds each · One shot
+            40 tech questions · 10-20 seconds each · One shot
           </p>
         </div>
 
