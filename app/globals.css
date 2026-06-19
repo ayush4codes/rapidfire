@@ -149,7 +149,7 @@ input {
 }
 
 .logo-left, .logo-right {
-  height: 156px;
+  height: 406px;
   width: auto;
   opacity: 0.95;
   animation: fadeIn 1s ease forwards;
@@ -161,7 +161,7 @@ input {
     padding: 0 var(--space-lg);
   }
   .logo-left, .logo-right {
-    height: 140px;
+    height: 390px;
   }
 }
 
