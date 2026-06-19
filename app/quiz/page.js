@@ -204,7 +204,7 @@ export default function QuizPage() {
           >
             You&apos;ll face {questions.length} tech questions.
             <br />
-            15 seconds per question. No going back.
+            10-20 seconds per question. No going back.
             <br />
             <strong style={{ color: 'var(--text-primary)' }}>
               This is your only attempt.
