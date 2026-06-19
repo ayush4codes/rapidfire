@@ -142,15 +142,16 @@ input {
   width: 100%;
   padding: 0 var(--space-2xl);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   pointer-events: none;
   z-index: 50;
 }
 
-.logo-left, .logo-right {
-  height: 406px;
-  width: auto;
+.logo-right {
+  height: auto;
+  max-width: 250px;
+  width: 100%;
   opacity: 0.95;
   animation: fadeIn 1s ease forwards;
 }
@@ -160,8 +161,8 @@ input {
     top: var(--space-lg);
     padding: 0 var(--space-lg);
   }
-  .logo-left, .logo-right {
-    height: 390px;
+  .logo-right {
+    max-width: 150px;
   }
 }
 

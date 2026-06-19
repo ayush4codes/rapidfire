@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="global-logos">
-          <img src="/assets/75.png" alt="75 Logo" className="logo-left" />
           <img src="/assets/CacheBugs.png" alt="CacheBugs Logo" className="logo-right" />
         </div>
         {children}
