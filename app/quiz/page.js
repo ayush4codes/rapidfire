@@ -37,7 +37,7 @@ export default function QuizPage() {
 
     const fetchQuestions = async () => {
       try {
-        const res = await fetch('/api/questions');
+        const res = await fetch('/api/questions', { cache: 'no-store' });
         const data = await res.json();
 
         if (!res.ok) {

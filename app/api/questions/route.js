@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/mongodb';
 import Question from '@/lib/models/Question';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET() {
   try {
     await dbConnect();
