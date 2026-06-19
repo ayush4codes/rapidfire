@@ -134,6 +134,37 @@ input {
   outline: none;
 }
 
+/* --- Global Logos --- */
+.global-logos {
+  position: absolute;
+  top: var(--space-xl);
+  left: 0;
+  width: 100%;
+  padding: 0 var(--space-2xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.logo-left, .logo-right {
+  height: 56px;
+  width: auto;
+  opacity: 0.95;
+  animation: fadeIn 1s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .global-logos {
+    top: var(--space-lg);
+    padding: 0 var(--space-lg);
+  }
+  .logo-left, .logo-right {
+    height: 40px;
+  }
+}
+
 /* --- Utility Classes --- */
 .container {
   max-width: 720px;
